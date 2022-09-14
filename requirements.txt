@@ -1,6 +1,6 @@
 pandas
 seaborn
 numpy
-matplotlib.pyplot
+matplotlib
 gensim
 cohere
