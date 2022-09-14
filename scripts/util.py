@@ -42,7 +42,7 @@ class Util:
         """
         try:
             data = dvc.read(path=path,repo=repo, rev=rev)
-            df = pd.read_csv(io.StringIO(data),low_memory=low_memory)
+            df = pd.read_csv(io.StringIO(data),low_memory=low_memory,encoding="utf8")
             self.logger.info(f"successsfuly read {path} from dvc")
 
             return df
