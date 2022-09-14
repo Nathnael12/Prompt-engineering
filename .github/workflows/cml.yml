@@ -1,0 +1,22 @@
+name: CML
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container: docker://ghcr.io/iterative/cml:0-dvc2-base1
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Check
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install -r requirements.txt
+          # python train.py
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          # cat metrics.txt >> report.md
+          # printf "🎉 The job was automatically triggered by a ${{ github.event_name }} event." > report.md
+          printf "🎉 Success!" > report.md
+          # cml publish plot.png --md >> report.md
+          cml send-comment report.md
