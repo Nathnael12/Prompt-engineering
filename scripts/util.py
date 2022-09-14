@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import dvc.api as dvc
-from scripts.logger import Logger
+from logger import Logger
 from sklearn.model_selection import train_test_split
 import io 
 import sys
