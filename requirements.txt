@@ -1,0 +1,6 @@
+pandas
+seaborn
+numpy
+matplotlib.pyplot
+gensim
+cohere

@@ -4,6 +4,8 @@ from sklearn.preprocessing import Normalizer, MinMaxScaler, StandardScaler
 from logger import Logger
 import sys
 from sklearn.preprocessing import LabelEncoder
+from gensim.parsing.preprocessing import remove_stopwords
+import re
 
 class DataCleaner:
     def __init__(self) -> None:
@@ -241,28 +243,7 @@ class DataCleaner:
 
         return df
         
-    def handle_outliers(self, df:pd.DataFrame, col:str, method:str ='IQR') -> pd.DataFrame:
-        """
-        Handle Outliers of a specified column using Turkey's IQR method
-        """
-        df = df.copy()
-        q1 = df[col].quantile(0.25)
-        q3 = df[col].quantile(0.75)
-        
-        lower_bound = q1 - ((1.5) * (q3 - q1))
-        upper_bound = q3 + ((1.5) * (q3 - q1))
-        if method == 'mode':
-            df[col] = np.where(df[col] < lower_bound, df[col].mode()[0], df[col])
-            df[col] = np.where(df[col] > upper_bound, df[col].mode()[0], df[col])
-        
-        elif method == 'median':
-            df[col] = np.where(df[col] < lower_bound, df[col].median, df[col])
-            df[col] = np.where(df[col] > upper_bound, df[col].median, df[col])
-        else:
-            df[col] = np.where(df[col] < lower_bound, lower_bound, df[col])
-            df[col] = np.where(df[col] > upper_bound, upper_bound, df[col])
-        
-        return df
+    
 
     def fill_mode(self, df, columns):
         """Fill missing data with mode."""
@@ -296,3 +277,28 @@ class DataCleaner:
             encodder.fit(df[feature])
             df[feature] = encodder.transform(df[feature])
         return df
+
+    def clean_links(self,df:pd.DataFrame,columns:list)->pd.DataFrame:
+        df2=df.copy()
+        for col in columns:
+            df2[col]=df[col].apply(lambda x:re.sub(r"\S*https?:\S*", "",x))
+            df2[col]=df[col].apply(lambda x:re.sub(r"\S*www.\S*", "", x))
+            
+        return df2
+
+    def clean_symbols(self,df:pd.DataFrame,columns:list)->pd.DataFrame:
+        df2=df.copy()
+        df2[columns].replace(to_replace=r'/',value=" ",regex=True,inplace=True)
+        for col in columns:
+            df2[col]=df2[col].replace(to_replace= r'\\', value= '', regex=True)
+            df2[col]=df2[col].replace(to_replace= r'[^\w]', value= ' ', regex=True)
+            df2[col]=df2[col].replace(to_replace= r'\u2026', value= ' ', regex=True)
+            df2[col]=df2[col].replace(to_replace=r'/',value=" ",regex=True)
+        return df2
+   
+
+    def clean_stopwords(self,df:pd.DataFrame,columns:list):
+        df2=df.copy()
+        for col in columns:
+            df2[col]=df2[col].apply(lambda x:remove_stopwords(x))
+        return df2
