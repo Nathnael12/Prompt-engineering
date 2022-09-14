@@ -41,8 +41,8 @@ class Util:
             Load data from a dvc storage
         """
         try:
-            data = dvc.read(path=path,repo=repo, rev=rev)
-            df = pd.read_csv(io.StringIO(data),low_memory=low_memory,encoding="utf8")
+            data = dvc.read(path=path,repo=repo, rev=rev,encoding="utf8")
+            df = pd.read_csv(io.StringIO(data),low_memory=low_memory)
             self.logger.info(f"successsfuly read {path} from dvc")
 
             return df
