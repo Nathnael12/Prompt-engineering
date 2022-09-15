@@ -43,6 +43,7 @@ class Processor:
             ('remove_stop_word',FunctionTransformer(self.cleaner.clean_stopwords, kw_args={"columns":columns},validate=False)),
             ('stemmer',FunctionTransformer(self.cleaner.stem_word, kw_args={"columns":columns},validate=False)),
             ('lemmatization',FunctionTransformer(self.cleaner.lemantize, kw_args={"columns":columns},validate=False)),
+            ('trail_space_remover',FunctionTransformer(self.cleaner.trail_space_remove, kw_args={"columns":columns},validate=False)),
         ])
 
         transformed=pipeline.fit_transform(targeted_df)
@@ -55,8 +56,10 @@ class Processor:
 
         prompt=""
         for ind in train_df.index:
+            prompt += "Task: Generate Analyst Average Score\n\n"
             for col in train_df.columns:
-                prompt += f"{col}: {train_df.loc[ind,col]}\n\n"
+                if train_df.loc[ind,col] is not '':
+                    prompt += f"{col}: {train_df.loc[ind,col]}\n\n"
             prompt += "-- --\n\n"
         try:
             with open('../data/tuner.txt', 'w', encoding="utf-8") as f:

@@ -13,3 +13,5 @@ Our data is versioned using DVC
 > news - For now we have only one virsion of news data
 > - news-v0 : original version of the data
 > - we shall add other versions as we proceed through the project
+
+<!-- include how to setup apikey -->

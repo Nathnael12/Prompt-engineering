@@ -1,3 +1,4 @@
+from cgitb import text
 from turtle import pos
 from typing_extensions import Self
 import pandas as pd
@@ -329,7 +330,10 @@ class DataCleaner:
         
         def stem(txt:str):
             stemmed_words = []
-            word_list = nltk.word_tokenize(txt)
+            try:
+                word_list = nltk.word_tokenize(txt)
+            except:
+                word_list=txt.split()
             
             for word in word_list:
                 try:
@@ -353,7 +357,10 @@ class DataCleaner:
 
         def leman(txt:str):
             leman_words = []
-            word_list = nltk.word_tokenize(txt)
+            try:
+                word_list = nltk.word_tokenize(txt)
+            except:
+                word_list=txt.split()
             
             for word in word_list:
                 try:
@@ -367,5 +374,14 @@ class DataCleaner:
 
         for col in columns:
             df[col] = df[col].apply(lambda x:leman(x))
+        return df
+    
+    def trail_space_remove(self,df:pd.DataFrame,columns:list=[]):
+
+        if len(columns) is 0:
+            columns = self.get_categorical_columns(df)
+
+        for col in columns:
+            df[col] = df[col].apply(lambda x:re.sub(r' +', ' ',x))
         return df
         

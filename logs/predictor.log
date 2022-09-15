@@ -1,0 +1,45 @@
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:49:47 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:50:14 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:50:18 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:59:17 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 15:59:17 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 15:59:21 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 15:59:21 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:08:28 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:08:52 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:08:57 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:16:33 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:16:57 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:17:02 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:31:57 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:32:38 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:32:43 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:38:12 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:38:12 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:38:16 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:38:16 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:41:12 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:41:55 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:41:59 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
