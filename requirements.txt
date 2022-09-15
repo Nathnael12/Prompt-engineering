@@ -7,3 +7,5 @@ cohere
 data_describe
 sklearn
 nltk
+fastapi
+python-multipart
