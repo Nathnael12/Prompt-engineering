@@ -26,5 +26,8 @@ The directories for this project is self-explanatory. You can find the **api** (
 
 This project uses `co:here` api for making predictions. Thus you need to have your own **`api_key`**.
 
-> create 
-<!-- include how to setup apikey -->
+> create `config.py` file in the root directory then place your api key as follows <br>
+> `api_key = "**************"`
+
+
+> If you want to fine tune your model, you can find `tuner.txt` file in *./data/* directory. Use this file for finetuning ***co:here Generate***
