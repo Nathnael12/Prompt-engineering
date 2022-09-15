@@ -11,7 +11,23 @@ You should also set up an MLOps pipeline that helps automate the task of using d
 ## Data
 Our data is versioned using DVC
 > news - For now we have only one virsion of news data
-> - news-v0 : original version of the data
-> - we shall add other versions as we proceed through the project
+> - **news-v0** : original version of the data
+> - **news-v1** : first stage cleaned news data
+> - **test-news-v1** : enhanced test data
+> - **test-news-v2** : 2nd enhanced test data
+> - **test_news-v0** : track test news data
+> - **train-news-v1** :  enhanced train data
+> - **train-news-v2** :  2nd enhanced train data
+> - **train_news-v0** :  track train news data
 
-<!-- include how to setup apikey -->
+
+## Project Structure
+The directories for this project is self-explanatory. You can find the **api** (for making predictions) setup in `api` folder. The versioned data in `data` folder. `notebook` directory contains the notebooks for this project. You can find helper classes in `scripts` directory.
+
+This project uses `co:here` api for making predictions. Thus you need to have your own **`api_key`**.
+
+> create `config.py` file in the root directory then place your api key as follows <br>
+> `api_key = "**************"`
+
+
+> If you want to fine tune your model, you can find `tuner.txt` file in *./data/* directory. Use this file for finetuning ***co:here Generate***
