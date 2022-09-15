@@ -1,3 +1,5 @@
+from turtle import pos
+from typing_extensions import Self
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import Normalizer, MinMaxScaler, StandardScaler
@@ -7,11 +9,18 @@ from sklearn.preprocessing import LabelEncoder
 from gensim.parsing.preprocessing import remove_stopwords
 import re
 
+import nltk
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+
 class DataCleaner:
     def __init__(self) -> None:
         """Initilize class."""
         try:
-            pass
+            
+            nltk.download('wordnet')
+            nltk.download('stopwords')
+            nltk.download('omw-1.4')
+            
             self.logger = Logger("data_cleaner.log").get_app_logger()
             self.logger.info(
                 'Successfully initialized data cleaner Object')
@@ -278,27 +287,85 @@ class DataCleaner:
             df[feature] = encodder.transform(df[feature])
         return df
 
-    def clean_links(self,df:pd.DataFrame,columns:list)->pd.DataFrame:
-        df2=df.copy()
+    def clean_links(self,df:pd.DataFrame,columns:list=[])->pd.DataFrame:
+        if len(columns) is 0:
+            columns=self.get_categorical_columns(df)
         for col in columns:
-            df2[col]=df[col].apply(lambda x:re.sub(r"\S*https?:\S*", "",x))
-            df2[col]=df[col].apply(lambda x:re.sub(r"\S*www.\S*", "", x))
+            try:
+                df[col]=df[col].apply(lambda x:re.sub(r"\S*https?:\S*", "",x))
+                df[col]=df[col].apply(lambda x:re.sub(r"\S*www.\S*", "", x))
+            except:
+                pass
             
-        return df2
+        return df
 
-    def clean_symbols(self,df:pd.DataFrame,columns:list)->pd.DataFrame:
-        df2=df.copy()
-        df2[columns].replace(to_replace=r'/',value=" ",regex=True,inplace=True)
-        for col in columns:
-            df2[col]=df2[col].replace(to_replace= r'\\', value= '', regex=True)
-            df2[col]=df2[col].replace(to_replace= r'[^\w]', value= ' ', regex=True)
-            df2[col]=df2[col].replace(to_replace= r'\u2026', value= ' ', regex=True)
-            df2[col]=df2[col].replace(to_replace=r'/',value=" ",regex=True)
-        return df2
-   
+    def clean_symbols(self,df:pd.DataFrame,columns:list=[])->pd.DataFrame:
 
-    def clean_stopwords(self,df:pd.DataFrame,columns:list):
-        df2=df.copy()
+        if len(columns) is 0:
+            columns=self.get_categorical_columns(df)
+
         for col in columns:
-            df2[col]=df2[col].apply(lambda x:remove_stopwords(x))
-        return df2
+            df[col]=df[col].apply(lambda x:re.sub(r'[^\w]', ' ',x))
+        return df
+
+    def clean_stopwords(self,df:pd.DataFrame,columns:list = []):
+         
+        if len(columns) is 0:
+            columns=self.get_categorical_columns(df)
+
+        for col in columns:
+            df[col]=df[col].apply(lambda x:remove_stopwords(x))
+        return df
+
+    def convert_to_lower_case(self,df:pd.DataFrame,columns:list = []):
+        columns=self.get_categorical_columns(df)
+        for col in columns:
+            df[col]=df[col].apply(lambda x: str(x).lower())
+        return df
+
+    def stem_word(self,df:pd.DataFrame,columns:list=[]):
+        
+        stemmer = PorterStemmer()
+        
+        def stem(txt:str):
+            stemmed_words = []
+            word_list = nltk.word_tokenize(txt)
+            
+            for word in word_list:
+                try:
+                    stemmed_words.append(stemmer.stem(word)) 
+                except:
+                    stemmed_words.append(word)
+            return ' '.join(stemmed_words)
+
+        if len(columns) is 0:
+            columns = self.get_categorical_columns(df)
+
+        for col in columns:
+            df[col] = df[col].apply(lambda x:stem(x))
+        return df
+
+        
+
+    def lemantize(self,df:pd.DataFrame,columns:list=[]):
+
+        wordnet_lemmatizer = WordNetLemmatizer()
+
+        def leman(txt:str):
+            leman_words = []
+            word_list = nltk.word_tokenize(txt)
+            
+            for word in word_list:
+                try:
+                    leman_words.append(wordnet_lemmatizer.lemmatize(word,pos='v'))
+                except:
+                    pass
+            return ' '.join(leman_words)
+
+        if len(columns) is 0:
+            columns = self.get_categorical_columns(df)
+
+        for col in columns:
+            df[col] = df[col].apply(lambda x:leman(x))
+        return df
+        
