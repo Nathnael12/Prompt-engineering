@@ -278,3 +278,8 @@
 09-15-2022 16:41:12 : INFO : logger : Successfully initialized predictor Object
 09-15-2022 16:41:55 : INFO : logger : successsfuly read data/test_news.csv from dvc
 09-15-2022 16:41:59 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 17:17:21 : INFO : logger : Successfully initialized util Object
+09-15-2022 17:17:22 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 17:17:22 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 17:17:49 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 17:17:54 : INFO : logger : successsfuly read data/trainer_news.csv from dvc

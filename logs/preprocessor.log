@@ -110,3 +110,11 @@
 09-15-2022 15:14:32 : INFO : logger : Preparing texts
 09-15-2022 15:14:32 : INFO : logger : Preparing texts
 09-15-2022 15:14:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:02 : INFO : logger : Successfully initialized processor Object
+09-15-2022 15:53:02 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:53:29 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:53:30 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
