@@ -1,0 +1,31 @@
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:38:11 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:38:23 : INFO : logger : Preparing texts
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:39:47 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:39:47 : INFO : logger : Preparing texts
+09-15-2022 08:40:49 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:40:49 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:40:56 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:40:56 : INFO : logger : Preparing texts
+09-15-2022 08:47:16 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:47:16 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:47:36 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:47:37 : INFO : logger : Preparing texts
+09-15-2022 08:53:48 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:00:46 : INFO : logger : Successfully initialized processor Object
+09-15-2022 09:00:46 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:00:52 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:00:52 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized processor Object
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:09:46 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:09:46 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
