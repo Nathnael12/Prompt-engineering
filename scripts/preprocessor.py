@@ -44,6 +44,7 @@ class Processor:
             ('stemmer',FunctionTransformer(self.cleaner.stem_word, kw_args={"columns":columns},validate=False)),
             ('lemmatization',FunctionTransformer(self.cleaner.lemantize, kw_args={"columns":columns},validate=False)),
             ('trail_space_remover',FunctionTransformer(self.cleaner.trail_space_remove, kw_args={"columns":columns},validate=False)),
+            ('remove_duplicate words',FunctionTransformer(self.cleaner.drop_duplicated_words, kw_args={"columns":columns},validate=False)),
         ])
 
         transformed=pipeline.fit_transform(targeted_df)
