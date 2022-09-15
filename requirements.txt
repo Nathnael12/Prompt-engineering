@@ -4,3 +4,6 @@ numpy
 matplotlib
 gensim
 cohere
+data_describe
+sklearn
+nltk

@@ -1,0 +1,285 @@
+09-14-2022 20:40:52 : INFO : logger : Successfully initialized util Object
+09-14-2022 20:40:52 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 20:41:25 : INFO : logger : Successfully initialized util Object
+09-14-2022 20:41:25 : INFO : logger : Successfully initialized util Object
+09-14-2022 20:41:25 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 20:41:25 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 20:41:39 : INFO : logger : successsfuly read ../data/news.csv
+09-14-2022 20:41:39 : INFO : logger : successsfuly read ../data/news.csv
+09-14-2022 20:42:41 : INFO : logger : converted ['timestamp'] to date time
+09-14-2022 20:42:41 : INFO : logger : converted ['timestamp'] to date time
+09-14-2022 20:42:51 : INFO : logger : converted ['timestamp'] to date time
+09-14-2022 20:42:51 : INFO : logger : converted ['timestamp'] to date time
+09-14-2022 20:56:40 : INFO : logger : Successfully initialized util Object
+09-14-2022 20:56:40 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 20:56:52 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 21:39:02 : INFO : logger : Successfully initialized util Object
+09-14-2022 21:39:02 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 21:39:27 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 22:37:06 : INFO : logger : Successfully initialized util Object
+09-14-2022 22:37:06 : INFO : logger : Successfully initialized util Object
+09-14-2022 22:37:06 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 22:37:06 : INFO : logger : Successfully initialized data cleaner Object
+09-14-2022 22:37:15 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 22:37:15 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:21:39 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:22:39 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:22:39 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:22:47 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:23:45 : INFO : logger : successsfuly read data/news.csv from dvc
+09-14-2022 23:23:45 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 07:21:32 : INFO : logger : Successfully initialized util Object
+09-15-2022 07:21:32 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 07:21:40 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:07:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:07:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:08:08 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:37:50 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:38:11 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:38:11 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:38:23 : INFO : logger : Preparing texts
+09-15-2022 08:38:23 : INFO : logger : Preparing texts
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:39:40 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:39:47 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:39:47 : INFO : logger : Preparing texts
+09-15-2022 08:40:48 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:40:49 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:40:49 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:40:49 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:40:56 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:40:56 : INFO : logger : Preparing texts
+09-15-2022 08:47:10 : INFO : logger : Successfully initialized util Object
+09-15-2022 08:47:16 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:47:16 : INFO : logger : Successfully initialized processor Object
+09-15-2022 08:47:16 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 08:47:36 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 08:47:37 : INFO : logger : Preparing texts
+09-15-2022 08:53:48 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:00:45 : INFO : logger : Successfully initialized util Object
+09-15-2022 09:00:46 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:00:46 : INFO : logger : Successfully initialized processor Object
+09-15-2022 09:00:46 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:00:52 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:00:52 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:00:54 : INFO : logger : Preparing texts
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized util Object
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized processor Object
+09-15-2022 09:09:39 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 09:09:46 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 09:09:46 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
+09-15-2022 09:09:48 : INFO : logger : Preparing texts
+09-15-2022 11:06:55 : INFO : logger : Successfully initialized util Object
+09-15-2022 11:10:22 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:10:22 : INFO : logger : Successfully initialized processor Object
+09-15-2022 11:10:22 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:11:16 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 11:11:27 : INFO : logger : Preparing texts
+09-15-2022 11:26:29 : INFO : logger : Preparing texts
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized processor Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized processor Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:34:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:35:07 : INFO : logger : Successfully initialized util Object
+09-15-2022 11:35:08 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:35:08 : INFO : logger : Successfully initialized processor Object
+09-15-2022 11:35:08 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 11:35:54 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 11:35:54 : INFO : logger : Preparing texts
+09-15-2022 11:35:57 : INFO : logger : Preparing texts
+09-15-2022 11:35:57 : INFO : logger : Preparing texts
+09-15-2022 11:35:57 : INFO : logger : Preparing texts
+09-15-2022 11:46:46 : INFO : logger : Preparing texts
+09-15-2022 11:46:46 : INFO : logger : Preparing texts
+09-15-2022 11:46:46 : INFO : logger : Preparing texts
+09-15-2022 11:46:46 : INFO : logger : Preparing texts
+09-15-2022 11:50:19 : INFO : logger : Successfully initialized util Object
+09-15-2022 11:50:20 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 12:24:44 : INFO : logger : Preparing texts
+09-15-2022 12:24:45 : INFO : logger : Preparing texts
+09-15-2022 12:24:45 : INFO : logger : Preparing texts
+09-15-2022 12:24:45 : INFO : logger : Preparing texts
+09-15-2022 13:19:06 : INFO : logger : Preparing texts
+09-15-2022 13:19:07 : INFO : logger : Preparing texts
+09-15-2022 13:19:07 : INFO : logger : Preparing texts
+09-15-2022 13:19:07 : INFO : logger : Preparing texts
+09-15-2022 13:19:07 : INFO : logger : Preparing texts
+09-15-2022 13:29:00 : INFO : logger : Successfully initialized util Object
+09-15-2022 13:29:01 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 13:29:01 : INFO : logger : Successfully initialized processor Object
+09-15-2022 13:29:01 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 13:29:43 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 13:31:34 : INFO : logger : Preparing texts
+09-15-2022 13:31:37 : INFO : logger : Preparing texts
+09-15-2022 13:31:37 : INFO : logger : Preparing texts
+09-15-2022 13:31:37 : INFO : logger : Preparing texts
+09-15-2022 13:31:37 : INFO : logger : Preparing texts
+09-15-2022 13:35:11 : INFO : logger : Successfully initialized util Object
+09-15-2022 13:35:11 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 13:35:11 : INFO : logger : Successfully initialized processor Object
+09-15-2022 13:35:11 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 13:35:38 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 13:35:38 : INFO : logger : Preparing texts
+09-15-2022 13:35:40 : INFO : logger : Preparing texts
+09-15-2022 13:35:40 : INFO : logger : Preparing texts
+09-15-2022 13:35:40 : INFO : logger : Preparing texts
+09-15-2022 13:35:40 : INFO : logger : Preparing texts
+09-15-2022 13:52:21 : INFO : logger : Preparing texts
+09-15-2022 13:52:22 : INFO : logger : Preparing texts
+09-15-2022 13:52:22 : INFO : logger : Preparing texts
+09-15-2022 13:52:22 : INFO : logger : Preparing texts
+09-15-2022 13:52:22 : INFO : logger : Preparing texts
+09-15-2022 13:52:32 : INFO : logger : Preparing texts
+09-15-2022 13:52:33 : INFO : logger : Preparing texts
+09-15-2022 13:52:33 : INFO : logger : Preparing texts
+09-15-2022 13:52:33 : INFO : logger : Preparing texts
+09-15-2022 13:52:33 : INFO : logger : Preparing texts
+09-15-2022 14:14:30 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:14:32 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:14:32 : INFO : logger : Successfully initialized processor Object
+09-15-2022 14:14:32 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:15:22 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:15:22 : INFO : logger : Preparing texts
+09-15-2022 14:15:24 : INFO : logger : Preparing texts
+09-15-2022 14:15:24 : INFO : logger : Preparing texts
+09-15-2022 14:15:24 : INFO : logger : Preparing texts
+09-15-2022 14:15:24 : INFO : logger : Preparing texts
+09-15-2022 14:29:29 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:29:29 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:29:30 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:29:30 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:29:58 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:29:58 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:30:03 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:30:03 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:28 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 14:30:37 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 14:52:35 : INFO : logger : Successfully initialized util Object
+09-15-2022 14:52:35 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:52:35 : INFO : logger : Successfully initialized processor Object
+09-15-2022 14:52:35 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 14:53:05 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 14:53:05 : INFO : logger : Preparing texts
+09-15-2022 14:53:07 : INFO : logger : Preparing texts
+09-15-2022 14:53:07 : INFO : logger : Preparing texts
+09-15-2022 14:53:07 : INFO : logger : Preparing texts
+09-15-2022 14:53:07 : INFO : logger : Preparing texts
+09-15-2022 15:14:02 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:14:04 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:14:04 : INFO : logger : Successfully initialized processor Object
+09-15-2022 15:14:04 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:14:30 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:14:30 : INFO : logger : Preparing texts
+09-15-2022 15:14:32 : INFO : logger : Preparing texts
+09-15-2022 15:14:32 : INFO : logger : Preparing texts
+09-15-2022 15:14:32 : INFO : logger : Preparing texts
+09-15-2022 15:14:32 : INFO : logger : Preparing texts
+09-15-2022 15:49:46 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:49:47 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:49:47 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:50:14 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:50:18 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:53:01 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:53:02 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:53:02 : INFO : logger : Successfully initialized processor Object
+09-15-2022 15:53:02 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:53:29 : INFO : logger : successsfuly read data/news.csv from dvc
+09-15-2022 15:53:30 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:53:32 : INFO : logger : Preparing texts
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized util Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:59:11 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 15:59:17 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 15:59:17 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 15:59:21 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 15:59:21 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:01:56 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:01 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:02:04 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:08:28 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:08:28 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:08:28 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:08:52 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:08:57 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:16:32 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:16:33 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:16:33 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:16:57 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:17:02 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:31:57 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:31:57 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:31:57 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:32:38 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:32:43 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:38:08 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:38:12 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:38:12 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:38:16 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:38:16 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 16:41:11 : INFO : logger : Successfully initialized util Object
+09-15-2022 16:41:12 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 16:41:12 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 16:41:55 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 16:41:59 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 17:17:21 : INFO : logger : Successfully initialized util Object
+09-15-2022 17:17:22 : INFO : logger : Successfully initialized data cleaner Object
+09-15-2022 17:17:22 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 17:17:49 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 17:17:54 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
