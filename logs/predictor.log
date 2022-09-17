@@ -46,3 +46,32 @@
 09-15-2022 17:17:22 : INFO : logger : Successfully initialized predictor Object
 09-15-2022 17:17:49 : INFO : logger : successsfuly read data/test_news.csv from dvc
 09-15-2022 17:17:54 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-15-2022 23:10:06 : INFO : logger : Successfully initialized predictor Object
+09-15-2022 23:10:20 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-15-2022 23:10:25 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-16-2022 11:18:17 : INFO : logger : Successfully initialized predictor Object
+09-16-2022 11:18:25 : INFO : logger : successsfuly read data/test_news.csv from dvc
+09-16-2022 11:18:29 : INFO : logger : successsfuly read data/trainer_news.csv from dvc
+09-17-2022 09:24:46 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:24:46 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:24:46 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:33:24 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:33:24 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:33:24 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:36:44 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:36:44 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:36:44 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:44:30 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:44:30 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:44:30 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:48:00 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:48:00 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:48:00 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized util Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized processor Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 09:50:27 : INFO : logger : Successfully initialized data cleaner Object
