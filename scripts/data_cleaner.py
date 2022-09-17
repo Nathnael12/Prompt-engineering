@@ -293,10 +293,10 @@ class DataCleaner:
             columns=self.get_categorical_columns(df)
         for col in columns:
             try:
-                df[col]=df[col].apply(lambda x:re.sub(r"\S*https?:\S*", "",x))
-                df[col]=df[col].apply(lambda x:re.sub(r"\S*www.\S*", "", x))
-            except:
-                pass
+                df[col]=df[col].apply(lambda x: re.sub(r"\S*https?:\S*", "",str(x)))
+                df[col]=df[col].apply(lambda x:re.sub(r"\S*www.\S*", "", str(x)))
+            except Exception as e:
+                self.logger.error(f"Cannot clean links: on column {col}")
             
         return df
 
@@ -306,7 +306,11 @@ class DataCleaner:
             columns=self.get_categorical_columns(df)
 
         for col in columns:
-            df[col]=df[col].apply(lambda x:re.sub(r'[^\w]', ' ',x))
+            try:
+                df[col]=df[col].apply(lambda x:re.sub(r'[^\w]', ' ',str(x)))
+            except Exception as e:
+                self.logger.error(f"Cannot clean symbols: {e}")
+            
         return df
 
     def clean_stopwords(self,df:pd.DataFrame,columns:list = []):
@@ -315,7 +319,11 @@ class DataCleaner:
             columns=self.get_categorical_columns(df)
 
         for col in columns:
-            df[col]=df[col].apply(lambda x:remove_stopwords(x))
+            try:
+                df[col]=df[col].apply(lambda x:remove_stopwords(x))
+            except Exception as e:
+                self.logger.error(f"Cannot clean stopwords: {e}")
+            
         return df
 
     def convert_to_lower_case(self,df:pd.DataFrame,columns:list = []):
