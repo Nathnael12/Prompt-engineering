@@ -31,3 +31,25 @@ This project uses `co:here` api for making predictions. Thus you need to have yo
 
 
 > If you want to fine tune your model, you can find `tuner.txt` file in *./data/* directory. Use this file for finetuning ***co:here Generate***
+
+## Installation Guide
+```
+git clone https://github.com/Nathnael12/Prompt-engineering.git
+cd Prompt-engineering
+pip install -r requirements.txt
+```
+
+## fastAPI
+You will find it in the `api` directory. There are three endpoints included 
+- `{host:port}/check` used for checking whether or not our API is up 
+- `{host:port}/bnewscore` used for predicting news scores
+- `{host:port}/jdentities` used for extracting job entities
+
+> for this project you will use `host:port = http://127.0.0.1:8000/` <br>
+you can start the api by the following command<br>
+```
+cd api
+uvicorn app:app --reload
+
+```
+The above command should start your api at `http://127.0.0.1:8000/`

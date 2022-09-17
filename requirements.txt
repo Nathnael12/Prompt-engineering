@@ -9,3 +9,4 @@ sklearn
 nltk
 fastapi
 python-multipart
+uvicorn
