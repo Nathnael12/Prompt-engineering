@@ -383,5 +383,14 @@ class DataCleaner:
 
         for col in columns:
             df[col] = df[col].apply(lambda x:re.sub(r' +', ' ',x))
+            df[col] = df[col].apply(lambda x:x.strip())
+        return df
+    
+    def drop_duplicated_words(self,df:pd.DataFrame,columns:list=[]):
+        if len(columns) is 0:
+            columns = self.get_categorical_columns(df)
+
+        for col in columns:
+            df[col] = df[col].apply(lambda x:", ".join(set((x).split())))
         return df
         

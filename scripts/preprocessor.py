@@ -6,7 +6,7 @@ import re
 import sys
 import warnings
 from logger import Logger
-import cohere
+import json
 
 
 from data_describe.text.text_preprocessing import *
@@ -44,6 +44,7 @@ class Processor:
             ('stemmer',FunctionTransformer(self.cleaner.stem_word, kw_args={"columns":columns},validate=False)),
             ('lemmatization',FunctionTransformer(self.cleaner.lemantize, kw_args={"columns":columns},validate=False)),
             ('trail_space_remover',FunctionTransformer(self.cleaner.trail_space_remove, kw_args={"columns":columns},validate=False)),
+            ('remove_duplicate words',FunctionTransformer(self.cleaner.drop_duplicated_words, kw_args={"columns":columns},validate=False)),
         ])
 
         transformed=pipeline.fit_transform(targeted_df)
@@ -68,4 +69,59 @@ class Processor:
         except:
             print("Failed to prepare tuner")
 
+    def prepare_job_description_text(self,df:pd.DataFrame):
         
+        for ind in df.index:
+    
+            tokens_json=json.dumps(df.loc[ind,'tokens'])
+            tokens=pd.read_json(tokens_json)
+            try:
+                entities=tokens.groupby(["entityLabel"])
+                tokens['text'] = tokens[['entityLabel','text']].groupby(['entityLabel'])['text'].transform(lambda x: ', '.join(x))
+                entities=tokens[['entityLabel','text']].drop_duplicates()
+                entities['text'] = entities['entityLabel'] + ": " + entities['text']
+                entities.drop('entityLabel',axis=1,inplace=True)
+            except:
+                pass    
+            tokens=""
+
+            for idx in entities.index:
+                tokens += (f"{entities.loc[idx,'text']};")
+
+
+            relation_json=json.dumps(df.loc[ind,'relations'])
+            relation=pd.read_json(relation_json)
+
+            try:
+                relationLabels=relation['relationLabel'].unique()
+            except:
+                relationLabels=[]
+
+            relationLabels=", ".join(relationLabels)
+
+            df['tokens'][ind]=tokens
+            df['relations'][ind]=relationLabels
+
+        return df
+
+    def prepare_job_description_tuner(self,train_df:pd.DataFrame):
+
+
+        prompt=""
+        for ind in train_df.index:
+            prompt += "Task: Extract job description entites from this text\n\n"
+            
+
+            prompt += f"Description: {train_df.loc[ind,'document']}\n\n"
+            tokens = "\n\n".join(train_df.loc[ind,'tokens'].split(';'))
+            prompt += f"{tokens}\n\n"
+            prompt += "-- --\n\n"
+        try:
+            with open('../data/job-tuner.txt', 'w', encoding="utf-8") as f:
+                f.write(prompt)
+            print("tuner prepared successfuly")
+        except:
+            print("Failed to prepare tuner")
+        
+
+            

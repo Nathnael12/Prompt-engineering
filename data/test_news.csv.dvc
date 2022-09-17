@@ -1,4 +1,4 @@
 outs:
-- md5: 073f0ae8c4b692ac57a3e2cefa69e3f5
-  size: 17164
+- md5: 8f76160da8b37e0a68bc4a1904f78b16
+  size: 3598
   path: test_news.csv
