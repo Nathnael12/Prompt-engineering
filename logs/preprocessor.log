@@ -2496,3 +2496,11 @@
 09-17-2022 13:38:12 : ERROR : logger : cannot convert to json too many tokens: total number of tokens (prompt and prediction) cannot exceed 2048 - received 3084. Try using a shorter prompt or a smaller max_tokens value.
 09-17-2022 13:38:12 : INFO : logger : Preparing texts
 09-17-2022 13:38:12 : INFO : logger : Preparing texts
+09-17-2022 17:24:37 : INFO : logger : Successfully initialized processor Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized processor Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized processor Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized data cleaner Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized predictor Object
+09-17-2022 17:24:38 : INFO : logger : Successfully initialized predictor Object
